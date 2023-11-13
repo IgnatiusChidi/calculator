@@ -1,0 +1,97 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+body.darkBody{
+    background-color: black;
+}
+
+nav{
+    box-sizing: border-box;
+    margin: 0px;
+    width: 100vw;
+    height: 5vh;
+    padding: 20px 10vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0px;
+}
+
+#logo{
+    width: 150px;
+}
+
+#result{
+    font-size: 40px;
+}
+
+#main{
+    display: grid;
+    justify-items: center;
+}
+
+#subMain{
+    display: grid;
+    justify-items: center;
+}
+
+#subMain input{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 2px 15px;
+    border: none;
+    background-color: rgb(235, 235, 235);
+}
+
+#buttonDiv{
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 50px);
+    width: 21vw;
+    height: 40vh;
+    grid-row-gap: 3px;
+    grid-column-gap: 3px;
+    justify-content: center;
+}
+
+#buttonDiv button{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0.5px 0px rgb(186, 186, 186);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.functionButton{
+    background-color: rgb(0, 191, 255);
+    color: white;
+}
+
+.functionButton:hover{
+    background-color: rgb(33, 200, 255);
+}
+
+.numberButton:hover{
+    background-color: rgb(204, 204, 204);
+}
+
+.otherButton{
+    background-color: rgb(252, 82, 20);
+    color: white;
+}
+
+.otherButton:hover{
+    background-color: rgb(255, 95, 37);
+}
